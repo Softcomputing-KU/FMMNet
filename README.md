@@ -4,7 +4,7 @@
 
 ## Framework
 
-![Framework](./FMMNet.PNG)
+![Framework](./FMMNet.png)
 
 ## Requirements
 1. Environment: The main mandatory dependency versions are as follows:  
