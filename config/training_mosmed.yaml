@@ -1,0 +1,48 @@
+TRAIN:
+  train_batch_size: 32
+  lr: 0.0003
+
+  # valid_batch_size: 8
+  valid_batch_size: 128
+
+  image_size: [224,224]
+
+  # min_epochs: 20
+  # max_epochs: 100
+  # patience: 20
+  min_epochs: 40
+  max_epochs: 200
+  patience: 40
+
+  device: 1
+  gt_channel: 3
+
+  model_save_path: ./save_model/mosmed
+ 
+  # model_save_filename: mmiunet #medseg mmiunet_gs mmiunext_s mmiunet
+  # model_save_filename: mmiunet_gd
+
+  # model_save_filename: mmiunet_fuzzy
+  # model_save_filename: mmiunet_pmm
+  # model_save_filename: mmiunet_gd_fuzzy_pmm
+
+  model_save_filename: mmiunet_fuzzy_pmm
+
+  # model_save_filename: mmiunet_fuzzy_pmm_15
+  # model_save_filename: mmiunet_fuzzy_pmm_25
+  # model_save_filename: mmiunet_fuzzy_pmm_50
+
+MODEL:
+  bert_type: microsoft/BiomedVLP-CXR-BERT-specialized
+  vision_type: facebook/convnext-tiny-224
+  project_dim: 768
+
+DATA: # QaTa-COV19-v2 MosMedDataPlus
+  train_csv_path: ./data/MosMedDataPlus/prompt/train.csv
+  train_root_path: ./data/MosMedDataPlus/Train
+
+  valid_csv_path: ./data/MosMedDataPlus/prompt/val.csv
+  valid_root_path: ./data/MosMedDataPlus/Val
+
+  test_csv_path: ./data/MosMedDataPlus/prompt/test.csv
+  test_root_path: ./data/MosMedDataPlus/Test
