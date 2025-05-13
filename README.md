@@ -1,5 +1,5 @@
 # Pytorch implementation of FMMNet
-**Fuzzy Min-Max Cross Attention for Chest Image Segmentation (MICCAI 2025 submmit)** 
+**Fuzzy Min-Max Cross Attention for Chest Image Segmentation** 
 
 
 ## Framework
